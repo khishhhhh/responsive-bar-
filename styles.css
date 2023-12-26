@@ -68,6 +68,7 @@ a {
 .show-links {
     height: 9.1rem;
 }
+
 a:hover {
     color: white;
 }
@@ -89,14 +90,14 @@ a:hover {
         display: flex;
         flex-direction: row;
         list-style-type: none;
-        width: 50%
+        width: 60%
     }
     li {
         width: 25%;
         text-align: center;
         border-top: none;
         align-self: center;
-        
+        font-size: 1.2em;
     }
     li:last-of-type {
         border-bottom: none;
@@ -107,6 +108,9 @@ a:hover {
         vertical-align: middle;
     }
     .show-links {
+        height: auto;
+    }
+    .links {
         height: auto;
     }
 
