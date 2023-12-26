@@ -8,7 +8,9 @@
 
 .nav-center {
     /* border: 2px solid black; */
+    width: 100%;
     background-color: pink;
+    
 }
 .nav-header {
     height: 5em;
@@ -56,15 +58,57 @@ a {
     font-weight: 600;
 }
 
-/* .links {
+.links {
     height: 0;
     overflow: hidden;
-    transition: height: 1s;
-} */
+    transition: height 1s;
+} 
 
 /* TOGGLE CLASS */
 .show-links {
-    height: 10rem;
+    height: 9.1rem;
+}
+a:hover {
+    color: white;
 }
 
-@media 
+
+@media (min-width: 800px)
+{
+    button {
+        visibility: hidden;
+    }
+
+    .nav-center {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        width: 50%
+    }
+    li {
+        width: 25%;
+        text-align: center;
+        border-top: none;
+        align-self: center;
+        
+    }
+    li:last-of-type {
+        border-bottom: none;
+    }
+    a {
+        margin-top: auto;
+        margin-bottom: auto;
+        vertical-align: middle;
+    }
+    .show-links {
+        height: auto;
+    }
+
+
+}
